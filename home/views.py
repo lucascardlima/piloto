@@ -12,6 +12,3 @@ def sobre(request):
 
 def contato(request):
     return render(request, 'contato.html')
-
-def ajuda(request):
-    return HttpResponse('<h1>Esta é a página de ajuda<h1>')
