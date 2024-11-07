@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-</head>
-<body>
-    <view>
-        <a href="{% url 'index'%}">Home</a> |
-        <a href="{% url 'sobre'%}">Sobre</a> |
-        <a href="{% url 'contato'%}">Contato</a>
-    </view>
-    <view>
-        <h1>Página Principal</h1>
-    </view>     
-</body>
-</html>
+{% extends 'base.html' %}
 
+{% block titulo %} Home {% endblock %}
+
+{% block links %} {% endblock %}
+
+{% block titulo %} 
+<h1>Bem-vindo ao nosso Sistema Web!!</h1>
+{% endblock %}

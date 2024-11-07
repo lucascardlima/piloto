@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-</head>
-<body>
-    <view>
-        <a href="{% url 'index'%}">Home</a> |
-        <a href="{% url 'sobre'%}">Sobre</a> |
-        <a href="{% url 'contato'%}">Contato</a>
-    </view>
-    <view>
-        <h1>Contato</h1>
-    </view>     
-</body>
-</html>
+{% extends 'base.html' %}
 
+{% block titulo %} Contato {% endblock %}
+
+{% block links %} {% endblock %}
+
+{% block titulo %} 
+<h1>Entre em contato conosco: contato@example.com</h1>
+{% endblock %}
