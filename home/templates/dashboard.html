@@ -203,7 +203,7 @@
                     </div>
                 </div>
             </div>
-			
+			{% block descricao_de_pagina %}
            <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 pt-4">
                     <div class="card card-custom">
@@ -211,14 +211,12 @@
                             <h5>New Orders</h5>
                         </div>
                         <div class="card-body card-body-custom">
-                            <h3>150</h3>
+                            <h3>{% block conteudo%}150{% endblock%}</h3>
                         </div>
                     </div>
                 </div>
-      
-    
-
             </div>
+            {% endblock %}
 
 			
             <!-- Additional content like charts, tables, etc. can be added here -->
