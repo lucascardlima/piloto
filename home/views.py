@@ -14,6 +14,9 @@ def sobre(request):
 def contato(request):
     return render(request, 'contato.html')
 
+def produtos(request):
+    return render(request, 'produtos.html')
+
 def exibir_item(request, id):
     return render(request,"exibir_item.html", {'id':id})
 
