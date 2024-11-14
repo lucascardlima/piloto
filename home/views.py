@@ -18,10 +18,10 @@ def produtos(request):
     return render(request, 'produtos/lista.html')
 
 def exibir_item(request, id):
-    return render(request,"exibir_item/13.html", {'id':id})
+    return render(request,"exibir_item.html", {'id':id})
 
 def perfil(request, usuario):
-    return render(request,"perfil/Lucas.html", {'usuario':usuario})
+    return render(request,"perfil.html", {'usuario':usuario})
 
 def diasemana(request, id):
     # Dicionário com os dias da semana
