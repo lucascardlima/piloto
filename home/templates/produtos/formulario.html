@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 
-{% block titulo%} Produtos {% endblock %}
+{% block titulo%} Novo Produto {% endblock %}
 
 {% block cards %}    {% endblock %}
 
-{% block titulo_page %} Listagem de Produtos {% endblock %}
+{% block titulo_page %} Novo Produto {% endblock %}
 
 {% block conteudo%} 
 
@@ -12,6 +12,7 @@
     {% csrf_token %}
     {{ form.as_p }} <!-- Renderiza cada campo do formulário com <p> tags -->
     <button class="btn btn-primary" type="submit">Enviar</button>
+    <button class="btn btn-secondary"  onclick="location.href='{% url 'produtos' %}'">Voltar</button>
 </form>
 
 {% endblock %}
