@@ -42,7 +42,7 @@ def produtos(request):
     }
     return render(request, 'produtos/lista.html',contexto)
 
-def form_produtos(request):
+def form_produto(request):
     form = ProdutoForm()
     contexto = {
         'form': form,
