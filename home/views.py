@@ -49,6 +49,25 @@ def form_produto(request):
     }
     return render(request, 'produtos/formulario.html', contexto)
 
+def detalhes_produto(request, id):
+    contexto = {
+        'id': id,
+    }
+    return render(request, 'produtos/detalhes.html', contexto)
+
+def editar_produto(request, id):
+    form = ProdutoForm()
+    contexto = {
+        'form': form,
+    }
+    return render(request, 'produtos/formulario.html', contexto)
+
+def excluir_produto(request, id):
+    contexto = {
+        'id': id,
+    }
+    return render (request, 'produtos/excluir.html', contexto)
+
 def exibir_item(request, id):
     return render(request,"exibir_item.html", {'id':id})
 
