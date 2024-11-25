@@ -31,7 +31,7 @@
             <td>
                 <button class="btn btn-primary"  onclick="location.href='{% url 'detalhes_produto' item.id %}'">Detalhes</button>
                 <button class="btn btn-warning"  onclick="location.href='{% url 'editar_produto' item.id %}'">Alterar</button>
-                <button class="btn btn-danger"  onclick="confirmarExclusao{% url 'excluir_produto' item.id %}'">Excluir</button>
+                <button class="btn btn-danger" onclick="confirmarExclusao('{% url 'excluir_produto' item.id %}')">Excluir</button>
             </td>
         </tr>
         {% endfor %}
